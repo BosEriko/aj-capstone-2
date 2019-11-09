@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Profile | Alpas
+    </title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="font-comfortaa bg-black">
+    <header class="fixed top-0 left-0 right-0 z-20">
+      <div class="container mx-auto flex my-10 items-center">
+        <div class="logo flex-1 text-2xl">
+          <span class="logo-head text-white bg-red-600 rounded pr-1 pl-4 pt-2 inline-block">a</span>
+          <span class="logo-body pt-2 text-white">lpas</span>
+        </div>
+      </div>
+    </header>
+    <div class="flex-1 text-white">
+      <div id="cover-photo" style="background-image: url('https://i.imgur.com/npDgqFC.png');"></div>
+      <div style="height: 10000px;"></div>
+    </div>
+    <footer class="text-white text-center p-5">
+      Alpas &copy; <script>document.write(new Date().getFullYear())</script>
+    </footer>
+    <script>
+      let coverPhoto = document.getElementById("cover-photo");
+      window.addEventListener('scroll', _ => {
+        coverPhoto.style.backgroundPosition= `center ${window.pageYOffset/2}px`;
+      });
+    </script>
+  </body>
+</html>
