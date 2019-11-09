@@ -19,33 +19,50 @@
         background-position: center;
         background-image: url('https://imgur.com/pPPgEkK.gif');
       }
+      .main-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body class="font-comfortaa">
-    <header class="fixed top-0 left-0 right-0 bg-white z-20">
-      <div class="container mx-auto flex my-2 items-center">
+    <header class="fixed top-0 left-0 right-0 z-20">
+      <div class="container mx-auto flex my-10 items-center">
         <div class="logo flex-1 text-2xl">
-          <span class="logo-head bg-black text-red-600 rounded pr-1 pl-4 pt-2 inline-block">a</span>
-          <span class="logo-body pt-2">lpas</span>
+          <span class="logo-head bg-white text-red-600 rounded pr-1 pl-4 pt-2 inline-block">a</span>
+          <span class="logo-body pt-2 text-white">lpas</span>
         </div>
-        <ul class="flex">
+        <ul class="flex text-white">
           <li class="mx-2"><a class="hover:underline" href="#">Login</a></li>
           <li class="mx-2"><a class="hover:underline" href="#">Register</a></li>
-        </ul>
+        </ul>e
       </div>
     </header>
     <div class="h-screen bg-black relative z-10">
       <div id="particles-js" class="h-full w-full absolute top-0 left-0"></div>
-      <div class="filter h-full w-full absolute top-0 left-0">
-        laskdfj<br/>
-        laskdfj<br/>
-        laskdfj<br/>
-        laskdfj<br/>
-        laskdfj<br/>
+      <div class="main-content absolute text-white text-center text-4xl">
+        <div>An OPM community for</div>
+        <div id="typed-strings">
+          <p>students.</p>
+          <p>teachers.</p>
+          <p>drivers.</p>
+          <p>developers.</p>
+          <p>designers.</p>
+          <p>musicians.</p>
+          <p>you.</p>
+        </div>
+        <span id="typed"></span>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script>
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 50,
+        backSpeed: 50
+      });
       particlesJS("particles-js", {
           "particles": {
               "number": {
