@@ -85,3 +85,8 @@ textarea {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+@media (min-width: 1024px) {
+  #home aside {
+    width: 350px;
+  }
+}
