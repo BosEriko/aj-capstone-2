@@ -50,7 +50,9 @@ textarea {
   resize: none;
 }
 #profile aside #profile-picture {
-  margin-top: -15%;
+  width: 100%;
+  max-width: 200px;
+  margin: -15% auto 0;
 }
 #profile #namespace {
   margin-top: 7rem;
@@ -60,7 +62,9 @@ textarea {
     width: 350px;
   }
   #profile aside #profile-picture {
-    margin-top: -50%;
+    margin: -50% 0 0 0;
+    width: auto;
+    max-width: 100%;
   }
   #profile #namespace {
     margin-top: -7rem;
